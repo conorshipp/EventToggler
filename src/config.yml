@@ -1,0 +1,40 @@
+# EventToggler config
+
+
+# Set to true if you want to cancel the event
+
+
+# player events
+AsyncPlayerChatEvent: false
+PlayerArmorStandManipulateEvent: false
+PlayerBedEnterEvent: false
+PlayerBucketEmptyEvent: false
+PlayerBucketFillEvent: false
+PlayerDropItemEvent: false
+PlayerEditBookEvent: false
+
+# block events
+BlockBreakEvent: false
+BlockBurnEvent: false
+BlockCookEvent: false
+BlockDispenseEvent: false
+BlockDropItemEvent: false
+BlockExplodeEvent: false
+BlockFertilizeEvent: false
+BlockGrowEvent: false
+BlockIgniteEvent: false
+BlockPistonExtendEvent: false
+BlockPistonRetractEvent: false
+BlockPlaceEvent: false
+BlockShearEntityEvent: false
+CauldronLevelChangeEvent: false
+LeavesDecayEvent: false
+MoistureChangeEvent: false
+NotePlayEvent: false
+SignChangeEvent: false
+SpongeAbsorbEvent: false
+
+# weather events
+LightningStrikeEvent: false
+ThunderChangeEvent: false
+WeatherChangeEvent: false

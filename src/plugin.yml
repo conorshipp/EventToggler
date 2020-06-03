@@ -1,0 +1,5 @@
+name: EventToggler
+version: 1.0
+author: Conor Shipp
+main: me.conorshipp.eventtoggler.Main
+description: Simple plugin to cancel events
