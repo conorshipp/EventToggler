@@ -38,3 +38,8 @@ SpongeAbsorbEvent: false
 LightningStrikeEvent: false
 ThunderChangeEvent: false
 WeatherChangeEvent: false
+
+# hanging events
+HangingBreakByEntityEvent: false
+HangingBreakEvent: false
+HangingPlaceEvent: false
