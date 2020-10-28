@@ -22,6 +22,9 @@ import me.conorshipp.eventtoggler.listeners.block.MoistureChangeListener;
 import me.conorshipp.eventtoggler.listeners.block.NotePlayListener;
 import me.conorshipp.eventtoggler.listeners.block.SignChangeListener;
 import me.conorshipp.eventtoggler.listeners.block.SpongeAbsorbListener;
+import me.conorshipp.eventtoggler.listeners.hanging.HangingBreakByEntityListener;
+import me.conorshipp.eventtoggler.listeners.hanging.HangingBreakListener;
+import me.conorshipp.eventtoggler.listeners.hanging.HangingPlaceListener;
 import me.conorshipp.eventtoggler.listeners.player.AsyncPlayerChatListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerArmorStandManipulateListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerBedEnterListener;
@@ -73,6 +76,10 @@ public class Main extends JavaPlugin {
     new LightningStrikeListener(this);
     new ThunderChangeListener(this);
     new WeatherChangeListener(this);
+    // hanging events
+    new HangingBreakByEntityListener(this);
+    new HangingBreakListener(this);
+    new HangingPlaceListener(this);
     Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Enabled");
   }
   
