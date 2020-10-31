@@ -22,6 +22,8 @@ import me.conorshipp.eventtoggler.listeners.block.MoistureChangeListener;
 import me.conorshipp.eventtoggler.listeners.block.NotePlayListener;
 import me.conorshipp.eventtoggler.listeners.block.SignChangeListener;
 import me.conorshipp.eventtoggler.listeners.block.SpongeAbsorbListener;
+import me.conorshipp.eventtoggler.listeners.enchantment.EnchantItemListener;
+import me.conorshipp.eventtoggler.listeners.enchantment.PrepareItemEnchantListener;
 import me.conorshipp.eventtoggler.listeners.hanging.HangingBreakByEntityListener;
 import me.conorshipp.eventtoggler.listeners.hanging.HangingBreakListener;
 import me.conorshipp.eventtoggler.listeners.hanging.HangingPlaceListener;
@@ -80,6 +82,9 @@ public class Main extends JavaPlugin {
     new HangingBreakByEntityListener(this);
     new HangingBreakListener(this);
     new HangingPlaceListener(this);
+    // enchantment events
+    new EnchantItemListener(this);
+    new PrepareItemEnchantListener(this);
     Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Enabled");
   }
   
