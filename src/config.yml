@@ -50,3 +50,6 @@ PrepareItemEnchantEvent: false
 
 # raid events
 RaidTriggerEvent: false
+
+# vehicle events
+VehicleCreateEvent: false
