@@ -36,6 +36,7 @@ import me.conorshipp.eventtoggler.listeners.player.PlayerDropItemListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerEditBookListener;
 import me.conorshipp.eventtoggler.listeners.raid.RaidTriggerListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleCreateListener;
+import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDestroyListener;
 import me.conorshipp.eventtoggler.listeners.weather.LightningStrikeListener;
 import me.conorshipp.eventtoggler.listeners.weather.ThunderChangeListener;
 import me.conorshipp.eventtoggler.listeners.weather.WeatherChangeListener;
@@ -91,6 +92,7 @@ public class Main extends JavaPlugin {
     new RaidTriggerListener(this);
     // vehicle events
     new VehicleCreateListener(this);
+    new VehicleDestroyListener(this);
     Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Enabled");
   }
   
