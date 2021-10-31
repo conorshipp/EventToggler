@@ -34,6 +34,7 @@ import me.conorshipp.eventtoggler.listeners.player.PlayerBucketEmptyListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerBucketFillListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerDropItemListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerEditBookListener;
+import me.conorshipp.eventtoggler.listeners.raid.RaidTriggerListener;
 import me.conorshipp.eventtoggler.listeners.weather.LightningStrikeListener;
 import me.conorshipp.eventtoggler.listeners.weather.ThunderChangeListener;
 import me.conorshipp.eventtoggler.listeners.weather.WeatherChangeListener;
@@ -85,6 +86,8 @@ public class Main extends JavaPlugin {
     // enchantment events
     new EnchantItemListener(this);
     new PrepareItemEnchantListener(this);
+    // raid events
+    new RaidTriggerListener(this);
     Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Enabled");
   }
   

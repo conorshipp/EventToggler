@@ -47,3 +47,6 @@ HangingPlaceEvent: false
 # enchantment events
 EnchantItemEvent: false
 PrepareItemEnchantEvent: false
+
+# raid events
+RaidTriggerEvent: false
