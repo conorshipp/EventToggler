@@ -13,6 +13,7 @@ PlayerBucketFillEvent: false
 PlayerDropItemEvent: false
 PlayerEditBookEvent: false
 PlayerFishEvent: false
+PlayerHarvestBlockEvent: false
 
 # block events
 BlockBreakEvent: false
