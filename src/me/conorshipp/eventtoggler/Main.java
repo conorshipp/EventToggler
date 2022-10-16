@@ -1,6 +1,7 @@
 package me.conorshipp.eventtoggler;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.conorshipp.eventtoggler.listeners.block.BlockBreakListener;
@@ -95,17 +96,17 @@ public class Main extends JavaPlugin {
     new VehicleCreateListener(this);
     new VehicleDestroyListener(this);
     new VehicleEnterListener(this);
-    Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Enabled");
+    Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[EventToggler] Plugin Enabled");
   }
   
   @Override
   public void onDisable() {
-    Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Disabled");
+    Bukkit.getConsoleSender().sendMessage(ChatColor.RED + "[EventToggler] Plugin Disabled");
   }
   
   @Override
   public void onLoad() {
-    Bukkit.getConsoleSender().sendMessage("[EventToggler] Plugin Loading");
+    Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[EventToggler] Plugin Loading");
   }
   
   public static Main getInstance() {
