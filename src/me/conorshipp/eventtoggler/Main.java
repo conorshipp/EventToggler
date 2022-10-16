@@ -36,6 +36,7 @@ import me.conorshipp.eventtoggler.listeners.player.PlayerBucketFillListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerDropItemListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerEditBookListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerFishListener;
+import me.conorshipp.eventtoggler.listeners.player.PlayerHarvestBlockListener;
 import me.conorshipp.eventtoggler.listeners.raid.RaidTriggerListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleCreateListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDestroyListener;
@@ -81,6 +82,7 @@ public class Main extends JavaPlugin {
     new PlayerDropItemListener(this);
     new PlayerEditBookListener(this);
     new PlayerFishListener(this);
+    new PlayerHarvestBlockListener(this);
     // weather events
     new LightningStrikeListener(this);
     new ThunderChangeListener(this);
