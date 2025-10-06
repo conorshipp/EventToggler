@@ -39,6 +39,7 @@ import me.conorshipp.eventtoggler.listeners.player.PlayerFishListener;
 import me.conorshipp.eventtoggler.listeners.player.PlayerHarvestBlockListener;
 import me.conorshipp.eventtoggler.listeners.raid.RaidTriggerListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleCreateListener;
+import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDamageListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDestroyListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleEnterListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleExitListener;
@@ -99,6 +100,7 @@ public class Main extends JavaPlugin {
     new RaidTriggerListener(this);
     // vehicle events
     new VehicleCreateListener(this);
+    new VehicleDamageListener(this);
     new VehicleDestroyListener(this);
     new VehicleEnterListener(this);
     new VehicleExitListener(this);

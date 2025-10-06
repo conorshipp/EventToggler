@@ -55,6 +55,7 @@ RaidTriggerEvent: false
 
 # vehicle events
 VehicleCreateEvent: false
+VehicleDamageEvent: false
 VehicleDestroyEvent: false
 VehicleEnterEvent: false
 VehicleExitEvent: false
