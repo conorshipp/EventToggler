@@ -57,3 +57,4 @@ RaidTriggerEvent: false
 VehicleCreateEvent: false
 VehicleDestroyEvent: false
 VehicleEnterEvent: false
+VehicleExitEvent: false
