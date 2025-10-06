@@ -42,6 +42,7 @@ import me.conorshipp.eventtoggler.listeners.vehicle.VehicleCreateListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDamageListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleDestroyListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleEnterListener;
+import me.conorshipp.eventtoggler.listeners.vehicle.VehicleEntityCollisionListener;
 import me.conorshipp.eventtoggler.listeners.vehicle.VehicleExitListener;
 import me.conorshipp.eventtoggler.listeners.weather.LightningStrikeListener;
 import me.conorshipp.eventtoggler.listeners.weather.ThunderChangeListener;
@@ -103,6 +104,7 @@ public class Main extends JavaPlugin {
     new VehicleDamageListener(this);
     new VehicleDestroyListener(this);
     new VehicleEnterListener(this);
+    new VehicleEntityCollisionListener(this);
     new VehicleExitListener(this);
     Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[EventToggler] Plugin Enabled");
   }
